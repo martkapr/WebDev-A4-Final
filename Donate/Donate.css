@@ -1,0 +1,136 @@
+html, body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #1782B0 0%, #1C2C35 100%);
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Global Styles */
+a {
+  text-decoration: none;
+  color:black;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: GT Walsheim Pro Trial;
+  font-size: 3.5rem;
+}
+
+p {
+  font-family: Avenir;
+  font-size: 1.2rem;
+}
+
+button.btn {
+  background: black;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  font-family: GT Walsheim Pro Trial;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Global Styles */
+
+/* Navbar */
+
+.nav {
+  background: white;
+  padding: 0 2rem;
+  height: 8vh;
+  min-height: 8vh;
+  overflow: hidden;
+  /* position: fixed; */
+}
+
+.nav .nav-menu {
+  justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+  font-size: 1.4rem;
+  color: black;
+}
+
+.nav .nav-items {
+  display: flex;
+  margin: 0;
+}
+
+.nav .nav-items .nav-link {
+  padding: 1.6rem 1.6rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-family:  Avenir;
+}
+
+.nav .nav-items .nav-link:hover{
+  background-color:#F78F6F;
+}
+.nav .nav-items .nav-link:hover a{
+  color:white;
+}
+
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1.2rem 0;
+  text-decoration: none;
+  display: block;
+  font-family:  GT Walsheim Pro Trial;;
+  font-weight: bold;
+}
+
+.nav .social {
+  padding: 1.4rem 0;
+}
+.logo-white {
+  padding-top: 4px;
+}
+
+.logo-white img {
+  background: #131F22;
+  border-radius: 50%;
+  width: 7vh;
+  height: 7vh;
+  align-content: center;
+  margin: 0;
+}
+
+.logo-white img:hover {
+  border-radius: 25%;
+}
+.nav .social a {
+  padding: 0 .2rem;
+}
+.nav .social a:hover {
+  color: #a1c4cf;
+}
+/* Navbar */

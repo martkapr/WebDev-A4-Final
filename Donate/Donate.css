@@ -134,3 +134,126 @@ button.btn {
   color: #a1c4cf;
 }
 /* Navbar */
+
+/* Form Styles */
+
+.donation-box .fields {
+	width: 59%;
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+  font-family: Avenir;
+  flex-wrap: wrap;
+}
+
+
+.donation-box h1 {
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.donation-box {
+  background: black;
+	width: 55vw;
+	height: 50vh;
+	border-radius: 6px;
+	position: relative;
+	margin: auto;
+}
+input[type=text] {
+  border-radius: 4px;
+  width: 50%;
+  height: 20px;
+  font-family: Avenir;
+  color: black;
+}
+
+.donation-box .amount {
+	width: 30%;
+	display: block;
+	position: absolute;
+	top: 60px;
+	right: 15px;
+}
+.donation-box .feilds input {
+  display: block;
+  margin: 7px 7px;
+}
+
+.donation-box .amount .button {
+	width: 100%;
+	background-color: rgb(83, 163, 238);
+	margin-bottom: 10px;
+	text-align: center;
+	color:white;
+	padding: 15px 0px 15px 0px;
+	border-radius: 4px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.donation-box .amount .button:hover {
+	background-color:blue;
+}
+
+.donation-box .amount .button input {
+	min-width: 34px;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-family: Avenir;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	border-bottom: 2px dashed white;
+}
+
+.set-amount {
+	max-width: 96px;
+}
+
+.checkboxes {
+  position: absolute;
+  top: 242px;
+	left: 13px;
+}
+
+.checkboxes label {
+	position: flex;
+	font-size: 13px;
+	color: white;
+  font-family: Avenir;
+}
+
+.checkbox {
+  border: 1px solid blue; 
+  border-radius: 4px;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+}
+.donation-box .donate button {
+  margin-left: 45%;
+}
+/* Form Styles */
+
+
+/*      Viewport less than or equal to 770px Tablet */
+@media only screen and (max-width: 770px){
+  
+  .donation-box h1 {
+    font-size: 2.5rem;
+  }
+}
+/*      Viewport less than or equal to 750px */
+/*      Viewport less than or equal to 380px IphoneX */
+@media only screen and (max-width: 380px){
+  
+  .donation-box h1 {
+    font-size: 1.5rem;
+  }
+}
+/*      Viewport less than or equal to 380px IphoneX */

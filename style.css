@@ -163,8 +163,9 @@ main .site-title h1 {
 }
 
 main .site-title .btn {
-  margin: 11rem;
+  margin-top: 11rem;
   align-content: center;
+  text-align: center;
 }
 
 main .site-title .button:hover {
@@ -181,6 +182,7 @@ main .site-title .divebox {
   left: 50%;
   border: none;
   border-left: 4px dotted;
+  overflow: hidden;
 }
 
 /*  Site Title   */
@@ -195,10 +197,9 @@ main .issue-title {
 }
 
 main .issue-title .issue-background {
-  padding-top: 16rem;
-  padding-left: 14rem;
-  padding-right: 30rem;
-  text-align: left;
+  padding-top: 14rem;
+  text-align: center;
+  max-width: 60vw;
   color: white;
 }
 main .issue-title h1 {
@@ -209,30 +210,62 @@ main .issue-title h1 {
 /* Events Title */
 main .event-title {
   /* background: linear-gradient(180deg, #0A78A5 0%, #131E20 100%); */
-  background-size: cover;
+  /* background-size: cover; */
   height: 100vh;
-  display: flex;
-  justify-content: center;
+  /* display: flex;*/
+  justify-content: center; 
   color: white;
 }
 
 main .event-title .event-background {
-  padding-top: 4rem;
-  padding-left: 1rem;
-  text-align: left;
+  /* padding-top: 4rem;
+  padding-left: 1rem;*/
+  /* text-align: left; */
   color: white;
 }
-/* Events Title */
 
+main .event-title .event-background h1 {
+  margin: auto;
+  width: 70vw;
+}
+.myCalendar {
+  display: grid;
+  grid-gap: 10px;
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 325px 325px 120px;
+  margin: 0 auto 20px;
+  max-width: 70vw;
+}
+
+.myCalendar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* Events Title */
+main .mission-title .mission-background {
+  padding-top: 14rem;
+  text-align: center;
+  max-width: 60vw;
+}
 /* Mission Title */
 main .mission-title {
   height: 100vh;
   display: flex;
+  text-align: center;
   justify-content: center;
   color: white;
-    
 }
 
+main .mission-title {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
 /* Mission Title */
 
 /*  Main Content   */
@@ -246,17 +279,41 @@ footer {
   background-color: white;
 }
 /* Footer */
-/*      Viewport less than or equal to 750px */
-@media only screen and (max-width: 750px){
+/*      Viewport less than or equal to 770px */
+@media only screen and (max-width: 770px){
   .nav .nav-menu, .nav .nav-items{
     flex-direction: column;
   }
   .nav .toggle-collapse {
     display: initial;
   }
+  main .site-title .divebox {
+
+  }
+  main h1 {
+    font-size: 2.5rem;
+  }
+  main p {
+    font-size: 0.6rem;
+  }
 }
     
 /*      Viewport less than or equal to 750px */
+
+/*      Viewport less than or equal to 380px IphoneX */
+@media only screen and (max-width: 380px){
+  
+  main h1 {
+    font-size: 2rem;
+  }
+  main .site-title .site-background {
+  max-width: 70vw;
+  }
+  main p {
+    font-size: 0.6rem;
+  }
+}
+/*      Viewport less than or equal to 380px IphoneX */
 
 
 

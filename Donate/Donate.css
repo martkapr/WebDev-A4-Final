@@ -34,7 +34,7 @@ p {
 }
 
 button.btn {
-  background: black;
+  background:#131F22;
   color: white;
   padding: 1rem;
   border: none;
@@ -154,12 +154,18 @@ button.btn {
   padding-right: 10px;
 }
 .donation-box {
-  background: black;
+  background:  rgba(0, 0, 0, 40%);
+  
 	width: 55vw;
 	height: 50vh;
 	border-radius: 6px;
 	position: relative;
 	margin: auto;
+}
+
+.donation-box .switch{
+  color: white;
+  position: relative;
 }
 input[type=text] {
   border-radius: 4px;
